@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.51445496, g: 0.52081263, b: 0.4051958, a: 1}
+  m_IndirectSpecularColor: {r: 0.5144538, g: 0.52081174, b: 0.40519515, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10240,12 +10240,12 @@ GameObject:
   - component: {fileID: 962414972}
   - component: {fileID: 962414971}
   m_Layer: 0
-  m_Name: Virtual Camera
+  m_Name: RUNACAM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &962414971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10301,7 +10301,7 @@ Transform:
   m_GameObject: {fileID: 962414970}
   serializedVersion: 2
   m_LocalRotation: {x: 0.07469727, y: 0.8996924, z: -0.17013687, w: 0.39500296}
-  m_LocalPosition: {x: -22.95, y: 4.61, z: 14.41}
+  m_LocalPosition: {x: -22.95, y: 4.45, z: 14.452999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10656,7 +10656,7 @@ GameObject:
   - component: {fileID: 1025991322}
   - component: {fileID: 1025991325}
   - component: {fileID: 1025991324}
-  - component: {fileID: 1025991323}
+  - component: {fileID: 1025991326}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -10679,30 +10679,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 962414972}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1025991323
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025991321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd6043bde05a7fc4cba197d06915c1e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damping: {x: 0.1, y: 0.5, z: 0.3}
-  ShoulderOffset: {x: 0.5, y: -0.4, z: 0}
-  VerticalArmLength: 0.4
-  CameraSide: 1
-  CameraDistance: 2
-  CameraCollisionFilter:
-    serializedVersion: 2
-    m_Bits: 0
-  IgnoreTag: 
-  CameraRadius: 0.2
-  DampingIntoCollision: 0
-  DampingFromCollision: 2
 --- !u!114 &1025991324
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -10742,6 +10718,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1025991326
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025991321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd6043bde05a7fc4cba197d06915c1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damping: {x: 0.1, y: 0.5, z: 0.3}
+  ShoulderOffset: {x: 0.5, y: -0.4, z: 0}
+  VerticalArmLength: 0.9
+  CameraSide: 1
+  CameraDistance: 3
+  CameraCollisionFilter:
+    serializedVersion: 2
+    m_Bits: 2
+  IgnoreTag: 
+  CameraRadius: 0.2
+  DampingIntoCollision: 0
+  DampingFromCollision: 2
 --- !u!1001 &1031293318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12491,7 +12491,7 @@ Transform:
   m_GameObject: {fileID: 1456813166}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.45, y: 4.61, z: 16.41}
+  m_LocalPosition: {x: -23.45, y: 3.95, z: 17.453}
   m_LocalScale: {x: 0.7, y: 1.6, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12553,7 +12553,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"FwSpeed","value":{"$content":2.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!4 &1469630458 stripped
 Transform:
@@ -13768,7 +13769,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 200
-  field of view: 20
+  field of view: 100
   orthographic: 0
   orthographic size: 10
   m_Depth: 0
@@ -13794,8 +13795,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878827712}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0010333878, y: -0.9895543, z: 0.13958718, w: -0.036009654}
-  m_LocalPosition: {x: -24.93, y: 12.05, z: 38.95}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -22.95, y: 4.45, z: 14.452999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -45,7 +45,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _BASECOLOR: {r: 0.52585435, g: 0.95283014, b: 0.9490196, a: 0}
+    - _BASECOLOR: {r: 1, g: 1, b: 1, a: 0}
     - _SCROLLVELOCITY: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7097483683036079850

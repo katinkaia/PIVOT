@@ -8,9 +8,6 @@
         },
         {
             "m_Id": "bb512c5adaff495a877b0b8ea9dff892"
-        },
-        {
-            "m_Id": "e8e7cf9b746b452bafbc972861b44144"
         }
     ],
     "m_Keywords": [],
@@ -173,7 +170,7 @@
     },
     "m_PreviewData": {
         "serializedMesh": {
-            "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
+            "m_SerializedMesh": "{\"mesh\":{\"fileID\":10200,\"guid\":\"0000000000000000e000000000000000\",\"type\":0}}",
             "m_Guid": ""
         },
         "preventRotation": false
@@ -596,9 +593,6 @@
         },
         {
             "m_Id": "bb512c5adaff495a877b0b8ea9dff892"
-        },
-        {
-            "m_Id": "e8e7cf9b746b452bafbc972861b44144"
         }
     ]
 }
@@ -744,9 +738,9 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "r": 0.5258544087409973,
-        "g": 0.9528301954269409,
-        "b": 0.9490196108818054,
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
         "a": 0.0
     },
     "isMainColor": false,
@@ -1138,34 +1132,6 @@
         "m_SerializableColors": []
     },
     "m_SerializedDescriptor": "SurfaceDescription.BaseColor"
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector2ShaderProperty",
-    "m_ObjectId": "e8e7cf9b746b452bafbc972861b44144",
-    "m_Guid": {
-        "m_GuidSerialized": "764a19d7-b426-4f0c-90a2-94b81516c59a"
-    },
-    "m_Name": "SCROLLVELOCITY",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "SCROLLVELOCITY",
-    "m_DefaultReferenceName": "_SCROLLVELOCITY",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_DismissedVersion": 0,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 2,
-    "m_Hidden": false,
-    "m_Value": {
-        "x": 1.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    }
 }
 
 {
